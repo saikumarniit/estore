@@ -4,7 +4,7 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="stylesheet" type="text/css" href="./resources/css/custom.css">.
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -21,7 +21,7 @@
 
 <div class="container">
   <center><h2 style="color: blue;">NIIT Music E-Store</h2></center>
-  <div>
+   <div>
   <ul class="nav nav-pills">
     <li><a href="AboutUs" >About Us</a></li>
     <li><a href="index" >Home</a></li>

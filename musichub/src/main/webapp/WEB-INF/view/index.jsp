@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="css/custom.css">
+  <link rel="stylesheet" type="text/css" href="./resources/css/custom.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
   <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <style>
@@ -25,7 +25,7 @@
   <ul class="nav nav-pills">
     <li><a href="AboutUs" >About Us</a></li>
     <li><a href="index" >Home</a></li>
-     <li><a href="product.jsp?name=all categories" >All Categories</a></li>
+     <li><a href="product?t=all" >All Categories</a></li>
     <li><a href="SignUp" >Sign Up</a></li>
     <li> <a href="Login" >Log In</a></li>
   </div>
@@ -41,19 +41,19 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="images/1.jpg" alt="Chania" width="460" height="345">
+        <img src="./resources/images/1.jpg" alt="Chania" width="460" height="345">
       </div>
 
       <div class="item">
-        <img src="images/2.jpg" alt="Chania" width="460" height="345">
+        <img src="./resources/images/2.jpg" alt="Chania" width="460" height="345">
       </div>
     
       <div class="item">
-        <img src="images/3.jpg" alt="Flower" width="460" height="345">
+        <img src="./resources/images/3.jpg" alt="Flower" width="460" height="345">
       </div>
 
       <div class="item">
-        <img src="images/4.png" alt="Flower" width="460" height="345">
+        <img src="./resources/images/4.png" alt="Flower" width="460" height="345">
       </div>
     </div>
 
@@ -69,21 +69,21 @@
   </div>
 <div class="row">
     <div class="col-md-4">
-      <a href="product.jsp?name=voilon" class="thumbnail">
+      <a href="product?t=voilon" class="thumbnail">
         
-        <img src="images/voilon.jpg" alt="Pulpit Rock" style="width:150px;height:150px">
+        <img src="./resources/images/voilon.jpg" alt="Pulpit Rock" style="width:150px;height:150px">
       </a>
     </div>
     <div class="col-md-4">
-      <a href="product.jsp?name=drums" class="thumbnail">
+      <a href="product?t=drums" class="thumbnail">
         
-        <img src="images/drums.jpg" alt="Moustiers Sainte Marie" style="width:150px;height:150px">
+        <img src="./resources/images/drums.jpg" alt="Moustiers Sainte Marie" style="width:150px;height:150px">
       </a>
     </div>
     <div class="col-md-4">
-      <a href="product.jsp?name=guitar" class="thumbnail">
+      <a href="product?t=guitar" class="thumbnail">
         
-        <img src="images/guitar.jpg" alt="Cinque Terre" style="width:150px;height:150px">
+        <img src="./resources/images/guitar.jpg" alt="Cinque Terre" style="width:150px;height:150px">
       </a>
     </div>
   </div>
