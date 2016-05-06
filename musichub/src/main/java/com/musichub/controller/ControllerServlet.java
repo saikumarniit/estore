@@ -60,7 +60,7 @@ public class ControllerServlet {
         try {
 			jsonData=mapper.writeValueAsString(p.getProducts());
 			
-			asList = mapper.readValue(jsonData, new TypeReference<List<Product>>(){});
+			
 			 
 		} catch (JsonGenerationException e) {
 			// TODO Auto-generated catch block

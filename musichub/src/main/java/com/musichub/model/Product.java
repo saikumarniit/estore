@@ -1,7 +1,17 @@
 package com.musichub.model;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity
+@Table(name="productsdata")
 public class Product {
+	@Column(name="prod_name")
 	String name;
+	@Column(name="prod_id")
+	@Id
     int id;
     double price;
     String description;
