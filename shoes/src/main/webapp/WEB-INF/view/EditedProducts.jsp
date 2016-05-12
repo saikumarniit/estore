@@ -5,7 +5,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Bootstrap Example</title>
+  <title>ViewDetails</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
@@ -33,7 +33,7 @@
   </div>
     <div align="center" class="form">
           
-        <form:form action="./StoreProduct" method="post" style="background-color:black">
+        <form:form action="./StoreProduct" method="post" style="background-color:black" enctype="multipart/form-data">
             <table border="0">
                 <tr>
                     <td colspan="2" align="center"><h3>Edit Product </h3></td>
@@ -53,6 +53,9 @@
                 <tr>
                      <td style="color:white">manufacturer</td>
                     <td><form:input path="description" value="${product.description}" style="width:250px"/></td>
+                </tr>
+                  <tr> 
+                  Choose File: <input type="file" name="file">
                 </tr>
                 <tr>
                     <td colspan="2" align="center"><input type="submit" value="Save" /></td>
