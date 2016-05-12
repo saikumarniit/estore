@@ -5,8 +5,10 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.persistence.Transient;
 
 import org.hibernate.annotations.GeneratorType;
+import org.springframework.web.multipart.MultipartFile;
 
 @Entity
 @Table(name="prod")
@@ -18,6 +20,15 @@ public class Product {
     int id;
     double price;
     String description;
+    @Transient
+    MultipartFile file;
+    
+	public MultipartFile getFile() {
+		return file;
+	}
+	public void setFile(MultipartFile file) {
+		this.file = file;
+	}
 	public String getName() {
 		return name;
 	}

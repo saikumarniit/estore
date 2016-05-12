@@ -28,35 +28,15 @@
   <ul class="nav nav-pills">
     <li><a href="index" style="color: white">Home</a></li>
   </div>
-    <div align="center" class="form">
-
-        <form:form action="./StoreProduct" method="post" id="contactform" style="background-color:black" enctype="multipart/form-data">
+    <div align="center">
+       
             <table border="0">
                 <tr>
-                    <td colspan="2" align="center"><h2 style="color: white">Add Products</h2></td>
-                </tr>
-                <tr>
-                    
-                    <td><form:input path="name"  placeholder="Name of the Product" required="true" style="width:300px" /></td>
-                </tr>
-                <tr>
-                   
-                    <td><form:input path="price"  placeholder="Price" required="true" style="width:300px"/></td>
-                </tr>
-                <tr>
-                    
-                    <td><form:input path="description"   placeholder="Manufacturer" required="true" style="width:300px"/></td>
-                </tr>
-                 <tr> 
-                  Choose File: <input type="file" name="file" required="required">
-                </tr>
-                <tr>
-                    <td colspan="2" align="center"><input type="submit" value="AddProduct"  style="color: white"/></td>
+                    <td colspan="2" class="buttom" id="submit" align="center"><h1 >Sign Up Successful, Please click on Home tab to Sign In</h1></td>
                 </tr>
             </table>
-        </form:form>
     </div>
-     <div>
+    <div>
     <h4 >Copy Rights @ NIIT LTD</h4>
     </div>
 </body>

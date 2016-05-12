@@ -59,7 +59,7 @@
                     <a href="SignUp">Sign Up</a>
                 </li>
                 <li>
-                    <a href="Product">Customer Login</a>
+                    <a href="Product">User Login</a>
                 </li>
                  <li>
                     <a href="AdminCheck">Admin Login</a>
@@ -74,58 +74,7 @@
                 <div class="row">
                     
 <div class="container">
-<div>
-<h2><a href="ShopNow" style="color:black">Shop Now</a></h2>
-</div>
-  <br>
-  <div id="myCarousel" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-<ol class="carousel-indicators">
-      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
-      <li data-target="#myCarousel" data-slide-to="3"></li>
-    </ol>
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-
-      <div class="item active">
-        <img src="<c:url value="/resources/images/shoe1.jpg"/>"  style="width:400px; height:300px">
-      </div>
-
-      <div class="item">
-        <img src="<c:url value="/resources/images/shoe2.jpg"/>"  style="width:400px; height:300px">
-      </div>
-    
-      <div class="item">
-        <img src="<c:url value="/resources/images/shoe3.jpg"/>" style="width:400px; height:300px">
-      </div>
-
-      <div class="item">
-        <img src="<c:url value="/resources/images/shoe4.jpg"/>"  style="width:400px; height:300px">
-      </div>
-  
-    </div>
-  </div>
-</div>
-
-                </div>
-            </div>
-        </div>
-        <!-- /#page-content-wrapper -->
-
-    </div>
-    <!-- /#wrapper -->
-    <script>
-    $(document).ready(function(){
-    	$("#myCarousel").carousel({interval:2000});
-    });
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
-
+<h1>You Need to Sign In/ Sign Up to do Shopping</h1>
 </body>
 
 </html>

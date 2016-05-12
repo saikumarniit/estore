@@ -27,6 +27,7 @@ http://www.springframework.org/schema/tx/spring-tx.xsd">
             <list>
                 <value>com.musichub.shoes.model.Product</value>
                 <value>com.musichub.shoes.model.Customer</value>
+                 <value>com.musichub.shoes.model.UserRole</value>
             </list>
     </property>
     <!--  <property name="hibernate.implicit_naming_strategy" value="org.music.persistence.PGConstrainedImplicitNamingStrategy"/> -->

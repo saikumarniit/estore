@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html >
 <head>
@@ -15,14 +16,11 @@
 
 <body>    
 <div class="container">
-  <center><h2 style="color: blue;">Shoe Clue's</h2></center>
+  <center><h2 style="color: black;">Shoe Clue's</h2></center>
   <div>
   <ul class="nav nav-pills" style="background-color: black;">
-    <li><a href="AboutUs" >About Us</a></li>
-    <li><a href="index">Home</a></li>
-     <li><a href="Product?t=all" >All Categories</a></li>
-    <li><a href="SignUp" >Sign Up</a></li>
-    <li> <a href="SignIn" >Log In</a></li>
+       <li><a href="Product?t=all"  style="color: white">All Categories</a></li>
+    <li><a href='<c:url value="/j_spring_security_logout"/>' style="color:white">logout</a></li>
   </div>
   <div>
   <hr>
@@ -41,7 +39,7 @@
         <tr ng-repeat="resource in names | filter:search">
             <td>{{ resource.id }}</td>
             <td>{{ resource.name}}</td>
-            <td> <a href="AddtoCart?id={{resource.id}}&&name={{resource.name}}">
+            <td> <a href="AddtoCart?id={{resource.id}}&&name={{resource.name}}&&desc={{resource.description}}&&price={{resource.price}}">
 <img border="0" alt="W3Schools" src="./resources/images/info.png" width="30" height="30">
 </a></td>
         </tr>    
@@ -56,4 +54,7 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
     }
 });
 </script></body>
+ <div>
+    <h4 >Copy Rights @ NIIT LTD</h4>
+    </div>
 </html>

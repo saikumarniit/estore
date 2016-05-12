@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.musichub.shoes.model.Customer;
+import com.musichub.shoes.model.UserRole;
 
 @Repository("custDAO")
 public class CustomerDAOImpl implements CustomerDAO{
@@ -19,12 +20,15 @@ public class CustomerDAOImpl implements CustomerDAO{
 	
 @Transactional(propagation=Propagation.SUPPORTS)
 	public void addCustomer(Customer u) {
-		
 		Session s=factory.getCurrentSession();
 		Transaction t=s.beginTransaction();
+		u.setEnabled(true);
 		s.saveOrUpdate(u);
+		UserRole role=new UserRole();
+		role.setAuthority("ROLE_USER");
+	    role.setUser_role_id(u.getId());
+		s.saveOrUpdate(role);
 		t.commit();
-		
 	}
 
 	public List<Customer> viewUsers() {

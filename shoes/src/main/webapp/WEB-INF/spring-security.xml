@@ -10,8 +10,11 @@
 	<http-basic/>
 	</http>-->
 	 <http>
-	<intercept-url pattern="/AdminCheck*" access="ROLE_ADMIN"/>
-	<form-login login-page="/login"  default-target-url="/AdminCheck"/>
+	 <intercept-url pattern="/AdminCheck*" access="ROLE_ADMIN"/>
+	<form-login  login-page="/login"  default-target-url="/AdminCheck"/>
+	<intercept-url pattern="/Product**" access="ROLE_USER,ROLE_ADMIN"/>
+	<form-login login-page="/login"  default-target-url="/Product"/>
+	<logout logout-success-url="/logout"/>
 	</http>
 	<authentication-manager>
 	<authentication-provider>

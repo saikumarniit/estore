@@ -1,60 +1,66 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"  
     pageEncoding="ISO-8859-1"%>  
 <%@taglib uri="http://www.springframework.org/tags/form" prefix="form"%>  
-<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>  
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">  
-<html>  
- <head>  
-  <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">  
-  <title>Spring MVC Form Handling</title>  
- </head>  
- <body>  
-        <form:form action="./StoreProduct" method="post">
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>     
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="./resources/css/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="./resouces/css/demo.css" media="all" />
+     <link rel="stylesheet" type="text/css" href="./resources/css/custom.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+    <style>
+  .carousel-inner > .item > img,
+  .carousel-inner > .item > a > img {
+      width: 70%;
+      margin: auto;
+  }
+  </style>
+ 
+</head>
+<body>
+
+<div class="container">
+  <center><h2 style="color: black;">Shoe Clue's</h2></center>
+  <div>
+  <ul class="nav nav-pills">
+    <li><a href="index" style="color: white">Home</a></li>
+  </div>
+    <div align="center" class="form">
+          
+        <form:form action="./StoreProduct" method="post" style="background-color:black">
             <table border="0">
                 <tr>
-                    <td colspan="2" align="center"><h2>Add Products </h2></td>
+                    <td colspan="2" align="center"><h3>Edit Product </h3></td>
                 </tr>
                 <tr>
-                    <td>Product Id:</td>
-                    <td><form:input path="id" value="${product.id}" readonly="true"/></td>
+                    <td style="color:white">Product Id:</td>
+                    <td><form:input path="id" value="${product.id}" readonly="true" style="width:250px"/></td>
                 </tr>
                 <tr>
-                    <td>ProductName:</td>
-                    <td><form:input path="name" value="${product.name}"/></td>
+                    <td style="color:white">ProductName:</td>
+                    <td><form:input path="name" value="${product.name}" style="width:250px"/></td>
                 </tr>
                 <tr>
-                    <td>price:</td>
-                    <td><form:input path="price" value="${product.price}"/></td>
+                     <td style="color:white">price:</td>
+                    <td><form:input path="price" value="${product.price}" style="width:250px"/></td>
                 </tr>
                 <tr>
-                    <td>description</td>
-                    <td><form:input path="description" value="${product.description}"/></td>
+                     <td style="color:white">manufacturer</td>
+                    <td><form:input path="description" value="${product.description}" style="width:250px"/></td>
                 </tr>
                 <tr>
                     <td colspan="2" align="center"><input type="submit" value="Save" /></td>
                 </tr>
             </table>
         </form:form>
-   <h1>List of Products</h1>  
-<c:if test="${!empty products}">  
- <table align="left" border="1">  
-  <tr>  
-   <th>Product ID</th>  
-   <th>Product Name</th>  
-   <th>product price</th>  
-   <th>Product Description</th>  
-  </tr>  
-  
-  <c:forEach items="${products}" var="product">  
-   <tr>  
-    <td><c:out value="${product.id}"/></td>  
-    <td><c:out value="${product.name}"/></td>  
-    <td><c:out value="${product.price}"/></td>  
-    <td><c:out value="${product.description}"/></td>   
-      <td align="center"><a href="edit.html?id=${product.id}">Edit</a> | <a href="delete.html?id=${product.id}">Delete</a></td>
-   </tr>  
-  </c:forEach>  
- </table>  
-</c:if>  
 </body>  
+ <div>
+    <h4 >Copy Rights @ NIIT LTD</h4>
+    </div>
 </html>

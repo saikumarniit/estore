@@ -1,8 +1,7 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
     pageEncoding="ISO-8859-1"%>
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<html>
+<html >
 <head>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -12,12 +11,6 @@
     <link href="./resources/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="./resources/css/style.css" rel="stylesheet" media="screen">
     <script data-require="angular.js@1.0.x" src="http://code.angularjs.org/1.0.7/angular.min.js" data-semver="1.0.7"></script>
-    <% 
- 
- response.setHeader("pragma", "no-cache");
- response.setHeader("Cache-control", "no-cache, no-store, must-revalidate");
- response.setHeader("Expires", "0");
- %>
 </head>
 
 <body>    
@@ -26,7 +19,6 @@
   <div>
   <ul class="nav nav-pills" style="background-color: black;">
     <li><a href="AdminCheck" style="color: white">Home</a></li>
-    <li><a href='<c:url value="/j_spring_security_logout"/>' style="color:white">logout</a></li>
   </div>
   <div>
   <hr>
@@ -63,7 +55,4 @@ angular.module('myApp', []).controller('namesCtrl', function($scope) {
     }
 });
 </script></body>
- <div>
-    <h4 >Copy Rights @ NIIT LTD</h4>
-    </div>
 </html>
