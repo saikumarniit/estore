@@ -3,7 +3,13 @@
     <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
+ <% 
+ response.setHeader("pragma", "no-cache");
+ response.setHeader("Cache-control", "no-cache, no-store, must-revalidate");
+ response.setHeader("Expires", "0");
+ %>
 <head>
+ 
 <title>ViewProducts</title>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -13,12 +19,6 @@
     <link href="./resources/css/bootstrap.min.css" rel="stylesheet" media="screen">
     <link href="./resources/css/style.css" rel="stylesheet" media="screen">
     <script data-require="angular.js@1.0.x" src="http://code.angularjs.org/1.0.7/angular.min.js" data-semver="1.0.7"></script>
-    <% 
- 
- response.setHeader("pragma", "no-cache");
- response.setHeader("Cache-control", "no-cache, no-store, must-revalidate");
- response.setHeader("Expires", "0");
- %>
 </head>
 
 <body>    
@@ -27,8 +27,7 @@
   <div>
   <ul class="nav nav-pills" style="background-color: black;">
     <li><a href="AdminCheck" style="color: white">Home</a></li>
-    <li><a href='<c:url value="/j_spring_security_logout"/>' style="color:white">logout</a></li>
-  </div>
+     </div>
   <div>
   <hr>
   </div>
@@ -40,9 +39,9 @@
     <tr>
     
     <th>Product ID</th>
-    <th>Product NAME</th>
+    <th>Product Name</th>
     <th>Product Price</th>
-     <th>Product Description</th>
+     <th>Product Manufacturer</th>
     </tr>
         <tr ng-repeat="resource in names | filter:search">
             <td>{{ resource.id }}</td>

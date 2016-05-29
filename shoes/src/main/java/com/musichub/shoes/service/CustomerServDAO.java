@@ -6,6 +6,7 @@ import com.musichub.shoes.model.Customer;
 
 public interface CustomerServDAO {
 	public void addCustomer(Customer c);
-	public List<Customer> viewAllCustomers();
+	List<Customer> viewUsers();
+	public void deleteUser(Customer c);
 
 }

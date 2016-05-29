@@ -18,14 +18,15 @@ public class CustomerService implements CustomerServDAO {
 	@Transactional(propagation=Propagation.SUPPORTS)
 	public void addCustomer(Customer c) {
 		cd.addCustomer(c);
+	}
+	@Transactional(propagation=Propagation.SUPPORTS)
+	public List<Customer> viewUsers() {
+		return cd.viewUsers();
 		
 	}
-
-	public List<Customer> viewAllCustomers() {
-		// TODO Auto-generated method stub
-		return null;
+	@Transactional(propagation=Propagation.SUPPORTS)
+	public void deleteUser(Customer c) {
+		cd.deleteUser(c);
+		
 	}
-	
-	
-
 }

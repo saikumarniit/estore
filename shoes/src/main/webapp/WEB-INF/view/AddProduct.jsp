@@ -2,6 +2,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ <% 
+ response.setHeader("pragma", "no-cache");
+ response.setHeader("Cache-control", "no-cache, no-store, must-revalidate");
+ response.setHeader("Expires", "0");
+ %>
   <title>Add Product</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -41,14 +46,14 @@
                 </tr>
                 <tr>
                    
-                    <td><form:input path="price"  placeholder="Price" required="true" style="width:300px"/></td>
+                    <td><form:input path="price"  placeholder="Price"  min="1000"  max="2000" required="true" style="width:300px"/></td>
                 </tr>
                 <tr>
                     
                     <td><form:input path="description"   placeholder="Manufacturer" required="true" style="width:300px"/></td>
                 </tr>
                  <tr> 
-                  Choose File: <input type="file" name="file" required="required">
+                 <input type="file" name="file" required="required">
                 </tr>
                 <tr>
                     <td colspan="2" align="center"><input type="submit" value="AddProduct"  style="color: white"/></td>

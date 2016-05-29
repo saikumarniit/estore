@@ -48,12 +48,6 @@
       </a>
     </div>
     <div class="col-md-4">
-       <a href="ShopLogin" class="thumbnail">
-        <p>Buy @ INR 800.</p>    
-        <img src="<c:url value="/resources/images/four.jpg"/>"  style="width:400px; height:300px">
-      </a>
-    </div>
-    <div class="col-md-4">
       <a href="ShopLogin" class="thumbnail">
         <p>Buy @ INR 800.</p>    
         <img src="<c:url value="/resources/images/five.jpg"/>"  style="width:400px; height:300px">

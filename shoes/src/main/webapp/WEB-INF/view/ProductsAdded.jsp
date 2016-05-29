@@ -3,6 +3,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+ <% 
+ response.setHeader("pragma", "no-cache");
+ response.setHeader("Cache-control", "no-cache, no-store, must-revalidate");
+ response.setHeader("Expires", "0");
+ %>
   <title>ProductsAdded</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">

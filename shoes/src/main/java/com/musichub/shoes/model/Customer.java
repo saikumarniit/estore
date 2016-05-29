@@ -5,11 +5,16 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
+
+import org.hibernate.validator.constraints.NotEmpty;
 @Entity
 @Table
 public class Customer {
+	@NotEmpty (message = "User name can not be empty.")
 	String username;
+	@NotEmpty (message = "Password can not be empty.")
 	String password;
+	@NotEmpty (message = "Email can not be empty.")
 	String email;
 	boolean enabled;
 	public boolean isEnabled() {

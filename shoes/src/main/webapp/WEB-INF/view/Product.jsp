@@ -4,6 +4,11 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
+ <% 
+ response.setHeader("pragma", "no-cache");
+ response.setHeader("Cache-control", "no-cache, no-store, must-revalidate");
+ response.setHeader("Expires", "0");
+ %>
 <title>Products</title>
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
@@ -41,7 +46,7 @@
             <td>{{ resource.id }}</td>
             <td>{{ resource.name}}</td>
             <td> <a href="AddtoCart?id={{resource.id}}&&name={{resource.name}}&&desc={{resource.description}}&&price={{resource.price}}">
-<img border="0" alt="W3Schools" src="./resources/images/info.png" width="30" height="30">
+<img border="0" alt="W3Schools" src="./resources/images/{{resource.id}}.jpg" width="200" height="150">
 </a></td>
         </tr>    
     </table>

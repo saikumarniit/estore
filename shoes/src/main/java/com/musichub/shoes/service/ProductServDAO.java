@@ -10,5 +10,6 @@ public interface ProductServDAO {
 	public List<Product> viewAllProducts();
 	public void deleteProduct(Product p);  
 	public Product getProduct(int productid);  
+	public List<Product> getProductByName(String name);
 
 }

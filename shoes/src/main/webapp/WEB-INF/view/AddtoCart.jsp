@@ -2,6 +2,11 @@
 <
 <html lang="en">
 <head>
+ <% 
+ response.setHeader("pragma", "no-cache");
+ response.setHeader("Cache-control", "no-cache, no-store, must-revalidate");
+ response.setHeader("Expires", "0");
+ %>
   <title>AddToCart</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,6 +19,19 @@
   .carousel-inner > .item > a > img {
       width: 70%;
       margin: auto;
+      cursor: pointer;
+      border: 5px solid  white;
+      -webkit-box-shadow: 0 0 22px rgba(0,0,0,.5);
+      
+  }
+  figure img {
+  
+  -webkit-transition: all 1.3s;
+  }
+  figure:hover img
+  {
+  
+  -webkit-transform: scale(2.0);
   }
   </style>
 
@@ -27,14 +45,16 @@
       <li><a href="Product?t=all"  style="color:white">Home</a></li>
   </div>
   <div>
-  <img src="./resources/images/<%=request.getParameter("id") %>.jpg" class="thumbnail" alt="Cinque Terre" width="304" height="236"> 
+  <figure>
+  <img src="./resources/images/<%=request.getParameter("id") %>.jpg" class="thumbnail" alt="Cinque Terre" width="304" height="236">
+  </figure> 
   </div>
    <table class="table table-striped">
     <tr>
     <th>PID</th>
     <th>PNAME</th>
-    <th>Description</th>
-    <th>Price</th>
+    <th>Manufacturer</th>
+    <th>Price(INR)</th>
     </tr>
         <tr ng-repeat="resource in names | filter:search">
             <td><%=request.getParameter("id") %></td>

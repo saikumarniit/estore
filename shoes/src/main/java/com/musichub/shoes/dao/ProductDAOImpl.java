@@ -57,6 +57,15 @@ public class ProductDAOImpl implements ProductDAO {
 				 return (Product)s.get(Product.class, productid); 
 	}
 
+	public List<Product> getProductByName(String name) {
+		Session s=factory.getCurrentSession();
+		Transaction t=s.beginTransaction(); 
+		Query q=s.createQuery("from Product p where description='"+name+"'");
+		List<Product> ls=q.list();
+		t.commit();
+		return ls;
+	}
+
 	
 
 }

@@ -32,6 +32,7 @@
   <ul class="nav nav-pills">
     <li><a href="AddProduct" style="color: white">Add Product</a></li>
      <li><a href="ViewProducts" style="color:white">ViewProducts</a></li>
+     <li><a href="ViewUsers" style="color:white">View Users</a></li>
       <li><a href='<c:url value="/j_spring_security_logout"/>' style="color:white">logout</a></li>
     </ul>
   </div>

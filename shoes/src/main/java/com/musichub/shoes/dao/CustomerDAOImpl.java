@@ -2,6 +2,7 @@ package com.musichub.shoes.dao;
 
 import java.util.List;
 
+import org.hibernate.Query;
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -11,6 +12,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.musichub.shoes.model.Customer;
+import com.musichub.shoes.model.Product;
 import com.musichub.shoes.model.UserRole;
 
 @Repository("custDAO")
@@ -33,7 +35,22 @@ public class CustomerDAOImpl implements CustomerDAO{
 
 	public List<Customer> viewUsers() {
 		
-		return null;
+		Session s=factory.getCurrentSession();
+		Transaction t=s.beginTransaction();
+		List<Customer> ls=s.createCriteria(Customer.class).list();
+		t.commit();
+		return ls;
+	}
+	@Transactional(propagation=Propagation.SUPPORTS)
+	public void deleteUser(Customer c) {
+		Session s=factory.getCurrentSession();
+		Transaction t=s.beginTransaction();
+		System.out.println("In Delete User: pid:"+c.getUsername());
+		Query query=s.createQuery("delete from Customer where username=:status");
+		query.setString("status",c.getUsername());
+		int rowsDeleted=query.executeUpdate();
+		System.out.println("value of i:"+rowsDeleted);
+		t.commit();	
 	}
 
 }

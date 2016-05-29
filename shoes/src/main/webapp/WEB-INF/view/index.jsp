@@ -75,7 +75,7 @@
                     
 <div class="container">
 <div>
-<h2><a href="ShopNow" style="color:black">Shop Now</a></h2>
+<h2><a href="Shop" style="color:black">Shop Now</a></h2>
 </div>
   <br>
   <div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -118,7 +118,7 @@
     <!-- /#wrapper -->
     <script>
     $(document).ready(function(){
-    	$("#myCarousel").carousel({interval:2000});
+    	$("#myCarousel").carousel({interval:1000});
     });
     $("#menu-toggle").click(function(e) {
         e.preventDefault();

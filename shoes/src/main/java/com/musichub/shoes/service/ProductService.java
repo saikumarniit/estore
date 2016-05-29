@@ -35,4 +35,9 @@ public void deleteProduct(Product p) {
 public Product getProduct(int productid) {
 	return  pd.getProduct(productid);
 }
+@Transactional(propagation=Propagation.SUPPORTS)
+public List<Product> getProductByName(String name)
+{
+return pd.getProductByName(name);
+}
 }
