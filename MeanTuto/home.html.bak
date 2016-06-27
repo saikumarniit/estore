@@ -1,0 +1,144 @@
+<html>
+<head>
+<link  href="css/960.css" rel="stylesheet">
+<link  href="css/reset.css" rel="stylesheet">
+<link  href="css/text.css" rel="stylesheet">
+<style>
+a{
+background-color: #009933;
+color: white;
+
+}
+</style>
+</head>
+<body>
+<div class="container_12">
+  <div class="grid_12">
+<center> <h1 style="background-color: #009933; color:white">MEAN TUTORIALS</h1></center>
+<br></br>
+</div>
+<div class="grid_12">
+  <a href="MongoDb.html">Mongo DB</a> |
+  <a href="Express.html">Express</a>  |
+  <a href="Angular.html">Angular JS</a> |
+  <a href="NodeJS.html">Node JS</a>
+  <br></br>
+</div>
+<div class="grid_12">
+<hr></hr>
+</div>
+<div class="grid_12">
+<p style="color:#009933 ">MEAN is a free and open-source JavaScript software stack for building dynamic web sites and web applications.[1]
+
+The MEAN stack makes use of MongoDB, Express.js, Angular.js, and Node.js. Because all components of the MEAN stack support programs written in JavaScript, MEAN applications can be written in one language for both server-side and client-side execution environments.</p>
+</div>
+<div>
+  <hr></hr>
+</div>
+<div class="grid_3">
+<a href=""><img src="images/mongodb.png" height="200" width="200"></a>
+<br></br>
+<div class="grid_3">
+  <p>Click to Know About Mongo Db</p>
+</div>
+</div>
+<div class="grid_3">
+<a href=""><img src="images/express.jpg" height="200" width="200"></a>
+<br></br>
+<div class="grid_3">
+  <p>Click to Know About Express JS </p>
+</div>
+</div>
+<div class="grid_3">
+<a href=""><img src="images/angular.jpg" height="200" width="200"></a>
+<br></br>
+<div class="grid_3">
+  <p>Click to Know About Angular JS</p>
+</div>
+</div>
+<div class="grid_3">
+<a href=""><img src="images/nodejs.png" height="200" width="200"></a>
+<br></br>
+<div class="grid_3">
+  <p>Click to Know About Node JS</p>
+</div>
+</div>
+
+<div class="grid_12">
+  <p style="color:#336600; text-align:justify">MONGO DB:</p><p style="color:#009933 ">MongoDB (from humongous) is a free and open-source cross-platform document-oriented database. Classified as a NoSQL database, MongoDB avoids the traditional table-based relational database structure in favor of JSON-like documents with dynamic schemas (MongoDB calls the format BSON), making the integration of data in certain types of applications easier and faster. MongoDB is developed by MongoDB Inc. and is free and open-source, published under a combination of the GNU Affero General Public License and the Apache License. As of July 2015, MongoDB was the fourth most widely mentioned database engine on the web, and the most popular for document stores.</p>
+</div>
+<div class="grid_12">
+  <p style="color:#336600; text-align:justify">Express JS:</p><p style="color:#009933 ">Express.js is a Node.js web application server framework, designed for building single-page, multi-page, and hybrid web applications.[1] It is the de facto standard server framework for node.js.[2] The original author, TJ Holowaychuk, described it as a Sinatra-inspired server,[3] meaning that it is relatively minimal with many features available as plugins. Express is the backend part of the MEAN stack, together with MongoDB database and AngularJS frontend framework.
+In June 2014, rights to manage the project were acquired by StrongLoop.[4] StrongLoop was acquired by IBM in September 2015; [5] in January 2016, IBM announced that it would place Express.js under the stewardship of the Node.js Foundation incubator.</p>
+</div>
+<div class="grid_12">
+  <p style="color:#336600; text-align:justify">Angular JS:</p><p style="color:#009933 ">AngularJS (commonly referred to as "Angular" or "Angular.js") is a complete JavaScript-based open-source client and server-side web application framework mainly maintained by Google and by a community of individuals and corporations to address many of the challenges encountered in developing single-page applications. The JavaScript components complement PhoneGap, the framework used for developing cross-platform mobile apps. It aims to simplify both the development and the testing of such applications by providing a framework for client-side model–view–controller (MVC) and model–view–viewmodel (MVVM) architectures, along with components commonly used in rich Internet applications.</p>
+</div>
+<div class="grid_12">
+  <p style="color:#336600">Node JS:</p><p style="color:#009933 ">Node.js is an open-source, cross-platform runtime environment for developing server-side Web applications. Although Node.js is not a JavaScript framework,[3] many of its basic modules are written in JavaScript, and developers can write new modules in JavaScript. The runtime environment interprets JavaScript using Google's V8 JavaScript engine.
+
+Node.js has an event-driven architecture capable of asynchronous I/O. These design choices aim to optimize throughput and scalability in Web applications with many input/output operations, as well as for real-time Web applications (e.g., real-time communication programs and browser games).[4]</p>
+</div>
+<div>
+  <br></br>
+    <hr></hr>
+      <br></br>
+</div>
+<div class="grid_4">
+  <p>Mongo DB</p>
+  <iframe width="300" height="300"
+  src="https://www.youtube.com/embed/W-WihPoEbR4">
+  </iframe>
+</div>
+<div class="grid_4">
+    <p>Angular JS</p>
+  <iframe width="300" height="300"
+  src="https://www.youtube.com/embed/0kmdjqgO9IY">
+  </iframe>
+</div>
+<div class="grid_4">
+  <p>Express</p>
+  <iframe width="300" height="300"
+  src="https://www.youtube.com/embed/aHqnFWLP7wA">
+  </iframe>
+  <br></br>
+</div>
+<div>
+  <br></br>
+  <hr></hr>
+</div>
+<div class="grid_12">
+<center><h4 style="color:#009933">Contact Details</h4></center>
+<div>
+  <hr></hr>
+</div>
+</div>
+    <div class="grid_6" style="background-color:#9fdf9f">
+      <center><p1>Phone No: +91 40 33244116<br></br>
+      Address:  No. 100, Double Road,<br></br>
+       Sector-1, MVP Colony,<br></br>
+       Basheerbagh, Hyderabad  - 530017<br></br>
+       Land Mark: Opposite State Bank of Mysore<br></br>
+       WebSite: www.niit.com</p1></center>
+
+    </div>
+    <div class="grid_6" style="background-color:#9fdf9f">
+        <center><p1>Phone No: +91 40 33244116<br></br>
+      Address:  No. 100, Double Road,<br></br>
+       Sector-1, MVP Colony,<br></br>
+       Basheerbagh, Hyderabad  - 530017<br></br>
+       Land Mark: Opposite State Bank of Mysore<br></br>
+       WebSite: www.niit.com</p1></center>
+    </div>
+    <div>
+      <br></br>
+      <hr></hr>
+    </div>
+    <div class="grid_12">
+  <center> <h1 style="background-color: #009933; color:white">Copy Rights @ NIIT LTD</h1></center>
+  <br></br>
+  </div>
+
+</div>
+</body>
+</html>
